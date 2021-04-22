@@ -55,6 +55,12 @@ getGitVersionedUrl() {
 getGitRepoName() {
     getGitWebUrl | sed -Ee 's/.+\/([^\/]+)(\.git)?$/\1/g' | tr -d '\r\n'
 }
+#git ignore apply
+gia(){
+  git rm -r --cached .
+  git add .
+}
+
 
 #bash aliases
 alias zs="source ~/.zprofile"
