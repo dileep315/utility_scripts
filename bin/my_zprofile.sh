@@ -60,6 +60,15 @@ gia(){
   git rm -r --cached .
   git add .
 }
+#git set origin
+gso() {
+  git remote set-url origin $1
+}
+#git set upsream
+gsu() {
+  git remote add upstream $1
+}
+
 
 
 #bash aliases
